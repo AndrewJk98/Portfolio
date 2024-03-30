@@ -607,3 +607,40 @@ span{
     .languages-container{ grid-template-columns: repeat(1,1fr)}
 
 }
+#like-counter {
+    position: fixed;
+    bottom: 10px;
+    right: 80px;
+    padding: 15px 30px; /* Increased padding for more space */
+    background-color: #c4dbef;
+    border-radius: 20px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem; /* Increased font size */
+}
+
+#like-count {
+    margin-left: 5px;
+    font-weight: bold;
+    color: red;
+}
+#plus-button{
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+}
+#like-btn  i {
+    align-items: baseline;
+
+    background-color: black;
+    font-size: 4.2rem; /* Matches font size of text */
+    color: red;
+}
+
