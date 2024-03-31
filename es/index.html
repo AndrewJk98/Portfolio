@@ -189,22 +189,24 @@
 </section>
 <section class="contacts" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="" method="post">
+    <form action="https://formsubmit.co/eliseoandres18@gmail.com" method="post">
         <div class="input-group">
             <div class="input-box">
-                <input type="text" placeholder="Nombre Completo">
-                <input type="email" placeholder="Email">
+                <input type="text" name="nombres" placeholder="Nombre Completo">
+                <input type="email" name="email" placeholder="Email">
 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Telefono">
-                <input type="text" placeholder="Asunto">
+                <input type="number" name="telefono" placeholder="Telefono">
+                <input type="text" name="asunto" placeholder="Asunto">
             </div>
         </div>
         <div class="input-group-2">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
             <input type="submit" value="Enviar" class="btn">
         </div>
+        <input type="hidden" name="_next" value="https://andrewjk98.github.io/Portfolio/">
+        <input type="hidden" name="_captcha" value="false">
     </form>
 </section>
 <footer class="footer">
