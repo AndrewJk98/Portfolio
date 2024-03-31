@@ -24,6 +24,7 @@ window.onscroll = () => {
     })
 }
 
+// Like Button Functionality
 // Select the like button (if you have one)
 let likeButton = document.getElementById('like-btn');
 
@@ -33,10 +34,24 @@ let likeCount = document.getElementById('like-count');
 // Initial like count (stored in a variable)
 let currentLikes = 0;
 
+// Flag to track if clicked this session (stored in session storage)
+let clickedThisSession = false;
+
 // Function to increment like count
 function incrementLike() {
-    currentLikes++;
-    likeCount.innerText = currentLikes;
+    if (!clickedThisSession) {
+        currentLikes++;
+        likeCount.innerText = currentLikes;
+
+        // Store like count in local storage (optional)
+        localStorage.setItem('likeCount', currentLikes);
+
+        // Set clickedThisSession flag in session storage
+        sessionStorage.setItem('clickedLike', true);
+        clickedThisSession = true;
+    } else {
+        //alert("You can only like once per session!");
+    }
 }
 
 // Add click event listener to like button (if applicable)
@@ -44,10 +59,15 @@ if (likeButton) {
     likeButton.addEventListener('click', incrementLike);
 }
 
- Local_storage (optional, to_persist_count_across_refreshes)
- localStorage.setItem('likeCount', currentLikes);
- let storedCount = localStorage.getItem('likeCount');
- if (storedCount) {
-   currentLikes = parseInt(storedCount);
-   likeCount.innerText = currentLikes;
- }
+// Retrieve like count from local storage (optional)
+let storedCount = localStorage.getItem('likeCount');
+if (storedCount) {
+    currentLikes = parseInt(storedCount);
+    likeCount.innerText = currentLikes;
+}
+
+// Check session storage for clicked flag (optional)
+let sessionClicked = sessionStorage.getItem('clickedLike');
+if (sessionClicked) {
+    clickedThisSession = true; // Prevent further clicks this session
+}
