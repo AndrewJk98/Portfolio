@@ -1,5 +1,9 @@
 import {data} from './data/datos_c3.js';
 
+// Definir una lista de colores
+const colores = ["table-primary", "table-secondary", "table-success", "table-danger", "table-warning", "table-info", "table-light", "table-dark"];
+let contadorTablas = 0; // Contador para alternar colores
+
 // Función recursiva para contar contenidos que no sean del tipo "DIRECTORY"
 const contarContenidos = (nodos) => {
     let contador = 0;
@@ -59,6 +63,11 @@ const toggleNodosHijos = (tr_padre, cant_tds, id_padre, subnodos) => {
 
     const table = document.createElement('table');
     table.classList.add("table", "border", "mb-0");
+
+    // Aplicar color alternante a la tabla según el contador
+    const colorClase = colores[contadorTablas % colores.length];
+    table.classList.add(colorClase); // Asignar la clase de color
+    contadorTablas++; // Incrementar el contador para el siguiente color
 
     const thead = document.createElement('thead');
     thead.classList.add('table-dark');
@@ -122,7 +131,7 @@ data.forEach(d => {
 
     const td_name = crearTD(d.name, d._id);
 
-    const td_qnty_fold = crearTD(
+    const td_qnty_fold = crearTD(   
         d.nodes.length, 
         d._id
     );
