@@ -204,7 +204,7 @@ function downloadXLSX() {
     // Crea un enlace temporal y haz clic en él para iniciar la descarga
     const a = document.createElement('a');
     a.href = fileUrl;
-    a.download = 'archivo.xlsx'; // Nombre del archivo descargado
+    a.download = 'Inventario.xlsx'; // Nombre del archivo descargado
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
