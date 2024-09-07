@@ -197,6 +197,20 @@ async function fetchData() {
     }
 }
 
+function downloadXLSX() {
+    // URL del archivo XLSX que quieres descargar
+    const fileUrl = './imgs/Inventario.xlsx'; // Reemplaza con la ruta a tu archivo
+
+    // Crea un enlace temporal y haz clic en él para iniciar la descarga
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = 'archivo.xlsx'; // Nombre del archivo descargado
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+document.getElementById('download-btn').addEventListener('click', downloadXLSX);
 
 // Llama a la función para cargar los datos cuando se carga la página
 window.onload = fetchData;
