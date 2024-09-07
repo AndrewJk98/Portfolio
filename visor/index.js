@@ -154,3 +154,49 @@ data.forEach(d => {
 
     table_body.appendChild(tr);
 });
+
+const endpoint = 'http://78.46.16.8:5005/api/dash/table/contenido'
+
+async function fetchData() {
+    try {
+        const response = await fetch(endpoint);
+
+        // Verifica si la respuesta es exitosa
+        if (!response.ok) {
+            throw new Error('Error en la solicitud: ' + response.statusText);
+        }
+
+        // Convierte la respuesta a JSON
+        const data = await response.json();
+
+        // Obtiene el contenedor donde se mostrarán los datos
+        const tableBody = document.getElementById('accordion-data');
+
+        // Limpia cualquier contenido previo en el cuerpo de la tabla
+        tableBody.innerHTML = '';
+
+        // Recorre el array de "dato" y agrega cada elemento a la tabla
+        data.dato.forEach((item, index) => {
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                <td class='align-middle'>${index + 1}</td>
+                <td class='align-middle'>${item.categoria}</td>
+                <td class='align-middle'>${item.subcategoria}</td>
+                <td class='align-middle'>${item.tema}</td>
+                <td class='align-middle'>${item.contenido}</td>
+            `;
+
+            // Añade la fila a la tabla
+            tableBody.appendChild(row);
+        });
+    } catch (error) {
+        console.error('Error al obtener datos:', error);
+        const tableBody = document.getElementById('accordion-data');
+        tableBody.innerHTML = `<tr><td colspan="5">Error al cargar datos.</td></tr>`;
+    }
+}
+
+
+// Llama a la función para cargar los datos cuando se carga la página
+window.onload = fetchData;
