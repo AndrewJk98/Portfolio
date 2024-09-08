@@ -199,7 +199,7 @@ async function fetchData() {
 
 function downloadXLSX() {
     // URL del archivo XLSX que quieres descargar
-    const fileUrl = './imgs/Inventario.xlsx'; // Reemplaza con la ruta a tu archivo
+    const fileUrl = '../imgs/Inventario.xlsx'; // Reemplaza con la ruta a tu archivo
 
     // Crea un enlace temporal y haz clic en él para iniciar la descarga
     const a = document.createElement('a');
