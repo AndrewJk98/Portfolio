@@ -155,7 +155,7 @@ data.forEach(d => {
     table_body.appendChild(tr);
 });
 
-const endpoint = 'http://78.46.16.8:5005/api/dash/table/contenido'
+const endpoint = 'http://127.0.0.1:5005/api/dash/table/contenido'
 
 async function fetchData() {
     try {

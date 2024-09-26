@@ -1,0 +1,79 @@
+/* Reset básico para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal para el cuerpo */
+    font-weight: 300; /* Roboto Light */
+}
+
+.header .container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px; /* Padding para no pegar el contenido a los bordes */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre logo y menú */
+}
+
+.hfg-slot {
+    display: flex;
+    align-items: center;
+}
+
+.builder-item--logo .site-logo a {
+    display: flex;
+    align-items: center; /* Centra el logo verticalmente */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.builder-item--logo .site-logo img {
+    max-width: 100px; /* Ancho máximo del logo para dispositivos más pequeños */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.nav-menu-primary {
+    display: flex; /* Muestra el menú en línea */
+}
+
+.nav-menu-primary .primary-menu-ul {
+    list-style: none; /* Elimina los puntos de los ítems de lista */
+    display: flex;
+}
+
+.nav-menu-primary .menu-item {
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.nav-menu-primary .menu-item a {
+    font-family: 'Noto Serif', serif; /* Noto Serif para titulares */
+    color: #333; /* Color del texto */
+    text-decoration: none; /* No subrayado */
+    font-size: 16px; /* Tamaño del texto */
+    transition: color 0.3s; /* Transición suave al cambiar color */
+}
+
+.nav-menu-primary .menu-item a:hover {
+    color: #0056b3; /* Color al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column; /* Cambia la disposición a vertical en pantallas pequeñas */
+    }
+
+    .nav-menu-primary {
+        margin-top: 20px; /* Espacio adicional en pantallas pequeñas */
+    }
+
+    .nav-menu-primary .primary-menu-ul {
+        flex-direction: column; /* Elementos del menú en columna */
+    }
+
+    .nav-menu-primary .menu-item {
+        margin: 10px 0; /* Espacio vertical entre elementos del menú */
+    }
+}
