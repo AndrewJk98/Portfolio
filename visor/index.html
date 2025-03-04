@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <script>
-    document.addEventListener("keydown", function(e) {
-    // Comprobamos si se presionó F12 o Ctrl + Shift + I
-    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault(); // Prevenimos la acción por defecto
-        window.close(); // Cierra la pestaña actual
-    }
-});
-document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && (e.key === 'c' || e.key === 'v')) {
+     document.addEventListener("keydown", function(e) {
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+            e.preventDefault();
+            //window.close();
+        }
+        if (e.key === "F11" || (e.ctrlKey && e.key === "U")) {
+            e.preventDefault();
+            //window.close();
+        }
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'v')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener("contextmenu", function(e) {
         e.preventDefault();
-    }
-});
-
-document.addEventListener("contextmenu", function(e) {
-    e.preventDefault();
-    alert("El clic derecho está deshabilitado.");
-});
-document.addEventListener("keydown", function(e) {
-    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-        e.preventDefault(); // Previene que se abra las herramientas de desarrollo
-        alert("Las herramientas de desarrollo están deshabilitadas.");
-    }
-});
-
+    });
 </script>
 <html lang="en">
     <head>
