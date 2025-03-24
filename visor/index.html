@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<script>
+     document.addEventListener("keydown", function(e) {
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+            e.preventDefault();
+            //window.close();
+        }
+        if (e.key === "F11" || (e.ctrlKey && e.key === "U")) {
+            e.preventDefault();
+            //window.close();
+        }
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'v')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+</script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Análisis de datos de C3</title>
+    </head>
+
+    <body class="container">
+        <div class="text-center mt-3">
+            <h1>Análisis de datos de C3</h1>
+            <table class="table border" style="margin-top:3rem;">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nombre de la carpeta</th>
+                        <th>Cantidad de Subcarpetas </th>
+                        <th>Total de Contenidos</th>
+                    </tr>
+                </thead>
+                <tbody class="accordion accordion-flush" id="table_body" >
+                    <!-- Aca irán todos los tr -->
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center mt-3"> <p> Inv File : </p> <button id="download-btn">Descargar XLSX</button>
+        </div>
+        <div class="text-center mt-3">
+            <h1>Inventario del C3</h1>
+            <table class="table border" style="margin-top:3rem;">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Categoria</th>
+                        <th>SubCategoria</th>
+                        <th>Tema</th>
+                        <th>Contenido</th>
+                    </tr>
+                </thead>
+                <tbody id="accordion-data" >
+                    <!-- Aca irán todos los tr -->
+                </tbody>
+            </table>
+        </div>
+        <script src="./bootstrap/js/bootstrap.bundle.min.js" ></script>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
