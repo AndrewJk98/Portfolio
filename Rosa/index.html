@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Estilos Personalizados - Diseño Femenino e Innovador -->
+  <style>
+    :root {
+      --primary-color: #e83e8c; /* Rosa vibrante */
+      --primary-hover: #d63384; 
+      --sidebar-bg: #2d132c; /* Morado/ciruela oscuro muy elegante */
+      --section-light: #fff0f5; /* Fondo rosa muy pastel */
+    }
+    
+    a { color: var(--primary-color); }
+    a:hover { color: var(--primary-hover); }
+
+    /* Panel Izquierdo */
+    #header { background: var(--sidebar-bg); }
+    .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+      background: var(--primary-color);
+      color: #fff;
+    }
+    .profile .social-links a:hover { background: var(--primary-color); }
+
+    /* Capa Hero */
+    #hero:before { background: rgba(45, 19, 44, 0.7) !important; }
+    
+    /* Títulos */
+    .section-title h2::after { background: var(--primary-color); }
+    
+    /* Iconos generales */
+    .about .content ul i, .facts .count-box i { color: var(--primary-color); }
+    
+    /* Skills */
+    .progress-bar { background-color: var(--primary-color) !important; }
+    
+    /* Resume */
+    .resume .resume-item::before { border-color: var(--primary-color); background: #fff;}
+    .resume .resume-item::after { border-left: 2px solid var(--primary-color); }
+    
+    /* Portfolio */
+    .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active { color: var(--primary-color); }
+    .portfolio .portfolio-wrap .portfolio-links a:hover { background: var(--primary-color); }
+    
+    /* Servicios */
+    .services .icon-box .icon { border-color: var(--primary-color); }
+    .services .icon-box .icon i { color: var(--primary-color); }
+    .services .icon-box:hover .icon { background: var(--primary-color); border-color: var(--primary-color); }
+    .services .icon-box:hover .icon i { color: #fff; }
+    
+    /* Testimonios */
+    .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right { color: #fce1ed; }
+    .testimonials .swiper-pagination .swiper-pagination-bullet-active { background-color: var(--primary-color); }
+    
+    /* Contacto */
+    .contact .info i { color: var(--primary-color); background: #fce1ed; }
+    .contact .info:hover i { background: var(--primary-color); color: #fff; }
+    
+    /* Fondos alternados */
+    .section-bg { background-color: var(--section-light) !important; }
+    
+    /* Botones */
+    .back-to-top { background: var(--primary-color); }
+    .back-to-top:hover { background: var(--primary-hover); }
+    .btn-custom-submit {
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+      transition: 0.4s;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+    .btn-custom-submit:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Rosa Alvites</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://wa.me/51934258467" class="whatsapp" target="_blank" rel="noopener noreferrer"><i class="bx bxl-whatsapp"></i></a>
+          <!-- <a href="https://facebook.com" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a> -->
+          <a href="https://www.instagram.com/rosazoi/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+          <a href="https://pe.linkedin.com/in/rosa-zoila-alvites-juarez-938172221" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experiencia</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contactos</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Rosa Alvites</h1>
+      <p>Yo soy <span class="typed" data-typed-items="Diseñadora Gráfica, Especialista en Marketing, Creadora de Contenido, Freelancer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Acerca de mí</h2>
+          <p>Como Diseñadora Gráfica y Especialista en Marketing Publicitario, mi objetivo es transformar la visión de las marcas en experiencias visuales cautivadoras y estratégicas que generen impacto.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Diseñadora Gráfica &amp; Especialista en Marketing Publicitario.</h3>
+            <p class="fst-italic">
+              Combino creatividad, estrategia y un profundo conocimiento del consumidor para diseñar campañas que no solo atraen miradas, sino que también impulsan resultados comerciales.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 Sep 2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+51 934 258 467</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Los Olivos, Lima</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Estudiante</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>zrosa_nice@hotmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Mi enfoque profesional se centra en el diseño publicitario, la creación de identidades corporativas sólidas y la estrategia de contenido digital. Con una mentalidad analítica y atención meticulosa a los detalles, desarrollo piezas gráficas que comunican mensajes persuasivos.
+              <br><br>
+              Entiendo que el diseño es una herramienta de comunicación y ventas. Por ello, cada proyecto gráfico que emprendo está fundamentado en principios de marketing, asegurando que la estética visual trabaje en perfecta sintonía con los objetivos de la marca para conectar genuinamente con su audiencia ideal.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Los números respaldan mi compromiso con la excelencia y la calidad. A lo largo de mi trayectoria académica y profesional, he colaborado en diversos retos que han fortalecido mis capacidades creativas y estratégicas.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Clientes Satisfechos</strong> con resultados medibles</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Proyectos Gráficos</strong> y campañas publicitarias</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Horas de Edición</strong> y creación de estrategias</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Marcas Impulsadas</strong> mediante diseño</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Domino las herramientas líderes en la industria del diseño y aplico principios avanzados de marketing para garantizar que cada pieza gráfica y campaña cumpla su objetivo comercial con acabados profesionales.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Illustrator <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Diseño Publicitario <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Fotografía <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill"> Indesign <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Redes Sociales (Contenido) <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Estrategia de Marketing <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Experiencia</h2>
+          <p>Revisa mi trayectoria académica y profesional. Cada proyecto en el que trabajo está orientado a generar valor y comunicar de forma efectiva los objetivos de marketing a través de un diseño gráfico excepcional.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Resumen Profesional</h3>
+            <div class="resume-item pb-0">
+              <h4>Rosa Alvites</h4>
+              <p><em>Diseñadora gráfica creativa orientada a resultados, especializada en marketing publicitario. Experta en Adobe Photoshop e Illustrator para el desarrollo de campañas visuales y material publicitario digital o impreso que conecta con el público objetivo.</em></p>
+              <ul>
+                <li>Los Olivos, Lima</li>
+                <li>(51) 934 258 467</li>
+                <li>zrosa_nice@hotmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Educación</h3>
+            <div class="resume-item">
+              <h4>Ingenería de Diseño Digital</h4>
+              <h5>2018 - Presente</h5>
+              <p><em>Universidad Tecnológica del Perú</em></p>
+              <p>Desarrollo de proyectos académicos enfocados en identidad corporativa, campañas publicitarias y diseño multimedia. Participación activa en talleres de creatividad y desarrollo de estrategias visuales para casos de estudio.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Edición y Retoque de Fotografía</h4>
+              <h5>2025</h5>
+              <p><em>Pro Pixel</em></p>
+              <p>Curso especializado en técnicas avanzadas de fotomontaje, corrección de color y edición no destructiva orientada a la creación de piezas publicitarias de alto impacto.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Experiencia Práctica y Freelance</h3>
+            <div class="resume-item">
+              <h4>Diseñadora Grafica Freelancer </h4>
+              <h5>2023 - Presente</h5>
+              <p><em>Lima, Perú</em></p>
+              <ul>
+                <li>Creación de logotipos e identidad visual para pequeños emprendimientos locales y marcas personales.</li>
+                <li>Diseño de contenido gráfico atractivo para redes sociales (Instagram y Facebook) orientado a aumentar el alcance y la interacción.</li>
+                <li>Retoque fotográfico y armado de piezas gráficas para promociones, banners y eventos.</li>
+                <li>Trato directo con los clientes para entender sus necesidades y ofrecer soluciones creativas a medida.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Proyectos Integradores Académicos</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>Universidad Tecnológica del Perú</em></p>
+              <ul>
+                <li>Desarrollo completo de campañas publicitarias simuladas para marcas reales, abarcando desde el concepto hasta la gráfica final.</li>
+                <li>Elaboración de manuales de marca y diseño de empaques (packaging) aplicando fundamentos de marketing.</li>
+                <li>Trabajo colaborativo utilizando metodologías ágiles para cumplir con los plazos de entrega del equipo.</li>
+                <li>Presentación y sustentación de propuestas de diseño ante docentes y jurados evaluadores.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Explora una selección de mis proyectos más destacados, donde combino estrategia publicitaria y diseño visual para crear identidades de marca, campañas y piezas ilustradas de alto impacto.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-indesign">InDesign</li>
+              <li data-filter=".filter-campanas">Campañas</li>
+              <li data-filter=".filter-ilustraciones">Ilustraciones</li>
+              <li data-filter=".filter-fotografia">Fotografía</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-campanas">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pick-up.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/pick-up.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Proyecto Publicitario"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="Ver Detalles"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ilustraciones">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/flor.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ilustración Digital 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details-2.html" title="Ver Detalles"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ilustraciones">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Calavera.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ilustración Digital 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details-3.html" title="Ver Detalles"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-indesign">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/solapa portada.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Proyecto de Branding 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details-4.html" title="Ver Detalles"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fotografia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/photography.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Campaña Publicitaria 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details-5.html" title="Ver Detalles"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Servicios</h2>
+          <p>Ofrezco soluciones integrales de diseño y marketing creadas para elevar tu marca. Desde la identidad visual hasta la ejecución de campañas publicitarias estratégicas, trabajo para que tu mensaje destaque y convierta.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-palette"></i></div>
+            <h4 class="title"><a href="">Branding e Identidad Visual</a></h4>
+            <p class="description">Creación de logotipos, manuales de marca y paletas de colores que transmitan la esencia, personalidad y valores de tu empresa.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-megaphone"></i></div>
+            <h4 class="title"><a href="">Diseño de Campañas Publicitarias</a></h4>
+            <p class="description">Conceptualización y diseño de piezas gráficas persuasivas para medios impresos y digitales, siempre orientadas a la conversión.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-share"></i></div>
+            <h4 class="title"><a href="">Contenido para Redes Sociales</a></h4>
+            <p class="description">Diseño de posts, stories, reels y banners atractivos y optimizados para destacar en plataformas como Instagram, Facebook y LinkedIn.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-images"></i></div>
+            <h4 class="title"><a href="">Retoque y Fotomontaje</a></h4>
+            <p class="description">Edición profesional de fotografías y creación de composiciones visuales de alto impacto utilizando técnicas avanzadas en Adobe Photoshop.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-pen"></i></div>
+            <h4 class="title"><a href="">Ilustración Digital</a></h4>
+            <p class="description">Creación de recursos gráficos, vectores e ilustraciones personalizadas en Adobe Illustrator para potenciar tu comunicación y dar un toque único.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4 class="title"><a href="">Estrategia de Marketing</a></h4>
+            <p class="description">Análisis de mercado y planificación estratégica para asegurar que el diseño no solo sea estéticamente agradable, sino que logre tus objetivos comerciales.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonios</h2>
+          <p>Conoce lo que dicen algunos de mis clientes freelance y compañeros sobre mi dedicación, creatividad y ganas de aportar valor a través del diseño.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Rosa nos ayudó con el logo de nuestro nuevo emprendimiento. A pesar de ser estudiante, mostró un gran nivel de profesionalismo, paciencia y captó nuestra idea a la perfección.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Carlos Mendoza</h3>
+                <h4>Emprendedor Local</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Me encantaron los diseños que hizo para mi Instagram. Son frescos, modernos y se nota que sabe aplicar muy bien lo que está aprendiendo sobre marketing digital.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Laura Martínez</h3>
+                <h4>Creadora de Contenido</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Trabajar con Rosa en proyectos de la universidad es genial. Siempre aporta ideas súper creativas y sus ilustraciones digitales le dan un toque único y profesional a nuestras presentaciones.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Javier Solís</h3>
+                <h4>Compañero de Universidad</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Le pedí ayuda para rediseñar unos banners para las promociones de mi pequeña tienda online y quedé súper contenta. Es muy atenta y súper responsable con los tiempos de entrega.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Sofía Castro</h3>
+                <h4>Dueña de Tienda Online</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Contraté a Rosa para editar y retocar unas fotografías de mis productos. Hizo un fotomontaje muy creativo que ahora uso en toda mi publicidad por internet. ¡Recomendada!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Andrés Navarro</h3>
+                <h4>Cliente Freelance</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>¿Tienes un proyecto en mente o necesitas ayuda con el diseño y la estrategia publicitaria de tu marca? No dudes en escribirme, estaré encantada de conversar contigo y explorar cómo podemos trabajar juntos.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Ubicación:</h4>
+                <p>Los Olivos, Lima, Perú</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Correo:</h4>
+                <p>zrosa_nice@hotmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Teléfono:</h4>
+                <p>+51 934 258 467</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124888.66613388746!2d-77.1477755!3d-11.9213197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d1bb9e5ce6c3%3A0xc3c5132dd82ccb6!2sLos%20Olivos%2C%20Per%C3%BA!5e0!3m2!1ses!2sus!4v1700000000000!5m2!1ses!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="container">
+        <form action="forms/enviar.php" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombres</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" name="correo" placeholder="correo@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox"  id="acepto" required>
+                <label class="form-check-label" for="acepto" >Acepto la politica de privacidad</label>
+              </div>
+           <br><br> <br>
+              <div class="d-grid gap-2 col-6 mx-auto">
+              <button type="submit" class="btn btn-custom-submit">Enviar Mensaje</button>
+            </div>
+        </form>
+        
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div> -->
+  </footer>
+  <!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
